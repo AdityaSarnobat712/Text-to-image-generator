@@ -3,7 +3,6 @@ import userModel from "../models/userModel.js";
 import imageModel from "../models/imageModel.js";
 import FormData from "form-data";
 import mongoose from 'mongoose';
-
 export const generateImage = async (req, res) => {
     try {
         const { prompt } = req.body;

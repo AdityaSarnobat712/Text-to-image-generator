@@ -26,15 +26,11 @@ const registerUser = async(req, res)=>{
 
         res.json({success:true, token, user: {name: user.name}});
 
-
     } catch (error) {
         console.log(error)
         res.json({success:false, message: error.message});
     }
 }
-
-
-
 
 const loginUser = async (req, res) =>{
     try {
@@ -60,7 +56,6 @@ const loginUser = async (req, res) =>{
         res.json({success:false, message: error.message});
     }
 }
-
 
 const userCredits = async(req, res) => {
     try {
@@ -96,6 +91,5 @@ const userCredits = async(req, res) => {
         res.json({ success: false, message: error.message });
     }
 }
-
 
 export {registerUser, loginUser, userCredits}
